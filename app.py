@@ -1,1 +1,0 @@
-(content from canvas, trimmed for brevity)
