@@ -129,7 +129,7 @@ def show_speech_test_screen():
             st.session_state.start_time = time.time()
     
     if st.session_state.speech_recording:
-        st.markdown('<div style="text-align: center;"><那么st.markdown('<p>Recording in progress...</p>') 
+        st.markdown('<div style="text-align: center;"><p>Recording in progress...</p></div>', unsafe_allow_html=True)
         elapsed = time.time() - st.session_state.start_time
         progress = min(elapsed / 5.0, 1.0)  # Simulate 5 seconds
         st.markdown(f'<div class="progress-bar"><div class="progress-fill" style="width: {progress*100}%"></div></div>', unsafe_allow_html=True)
